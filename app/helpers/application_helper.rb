@@ -10,5 +10,10 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+  
+  # return the logo image
+  def logo
+    image_tag("logo.png", :alt => "Sample App", :class => "round")
+  end
 
 end

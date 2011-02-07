@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   # note: these implicitly create {root,contact,about,help}_{path,url}
   root :to => "pages#home"
